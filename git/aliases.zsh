@@ -22,3 +22,22 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
+alias gpf='git push --force-with-lease'
+
+# git add everything and commit it with 'wip' msg
+function gwip {
+  git add .
+  git commit -m 'wip'
+}
+
+# git add, git commit -m '.', git rebase NUM_COMMITS
+function garc {
+  git add .
+  git commit -m '.'
+  git rebase -i HEAD~"$1"
+}
+
+# git rebase NUM_COMMITS
+function gr {
+  git rebase -i HEAD~"$1"
+}
