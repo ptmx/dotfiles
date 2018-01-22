@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'ack'
+brew 'awscli'
 brew 'coreutils'
 brew 'elixir'
 brew 'go'
