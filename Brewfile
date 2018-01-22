@@ -4,6 +4,7 @@ tap 'homebrew/bundle'
 
 brew 'ack'
 brew 'coreutils'
+brew 'elixir'
 brew 'go'
 brew 'grc'
 brew 'imagemagick'
