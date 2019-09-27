@@ -1,4 +1,5 @@
-if test ! $(which spoof)
+# simple file server
+if test ! $(which serve)
 then
-  sudo npm install spoof -g
+  sudo npm install serve -g
 fi
