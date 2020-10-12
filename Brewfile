@@ -23,7 +23,6 @@ brew 'python3'
 brew 'rbenv'
 brew 'unrar'
 brew 'wget'
-brew 'yarn'
 brew 'youtube-dl'
 
 cask '1password'
