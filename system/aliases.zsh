@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# Print the most recent files in a directory
+alias recent="ls -lat | head"
