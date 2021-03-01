@@ -43,3 +43,7 @@ function garc {
 function gr {
   git rebase -i HEAD~"$1"
 }
+
+function gitzip() { 
+	git archive -o $@.zip HEAD
+}
