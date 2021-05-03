@@ -1,8 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
-tap 'xwmx/taps'
-
 brew 'ack'
 brew 'awscli'
 brew 'coreutils'
@@ -14,7 +11,6 @@ brew 'fd'
 brew 'git-standup'
 brew 'jq'
 brew 'openssl'
-brew 'nb'
 brew 'node'
 brew 'pgcli'
 brew 'postgresql'
