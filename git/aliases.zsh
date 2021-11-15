@@ -16,7 +16,14 @@ alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
 
 # Mine
-alias gprune='git fetch --prune origin'
+function gclean {
+  git remote prune origin
+  if git rev-parse --verify --quiet main; then
+    git branch --merged main | grep -v "\* main" | xargs -n 1 git branch -d
+  elif git rev-parse --verify --quiet master; then
+    git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d
+  fi
+}
 
 # git add everything and commit it with 'wip' msg
 function gwip {
