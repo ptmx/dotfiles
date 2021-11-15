@@ -14,7 +14,6 @@ brew 'imagemagick'
 brew 'fd' # alternative to find
 brew 'git-standup'
 brew 'jq'
-brew 'openssl'
 brew 'node'
 brew 'parquet-tools'
 brew 'pgcli'
