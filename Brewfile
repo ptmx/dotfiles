@@ -22,7 +22,7 @@ brew 'python3'
 brew 'rbenv'
 brew 'wifi-password'
 brew 'wget'
-brew 'youtube-dl'
+brew 'yt-dlp/taps/yt-dlp'
 
 cask '1password'
 cask 'dash'
