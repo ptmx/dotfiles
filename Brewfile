@@ -20,6 +20,7 @@ brew 'parquet-tools'
 brew 'pgcli'
 brew 'python3'
 brew 'rbenv'
+brew 'wifi-password'
 brew 'wget'
 brew 'youtube-dl'
 
