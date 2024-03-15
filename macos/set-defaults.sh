@@ -23,12 +23,14 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Set up Safari for development.
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
 # Show macOS app switcher across all monitors
 defaults write com.apple.Dock appswitcher-all-displays -bool true
+
+# Smaller dock icons
+defaults write com.apple.dock "tilesize" -int "36"
+
+# Dock autohide
+defaults write com.apple.dock "autohide" -bool "true"
+
+# Dock active apps only
+defaults write com.apple.dock "static-only" -bool "true"
