@@ -34,3 +34,6 @@ defaults write com.apple.dock "autohide" -bool "true"
 
 # Dock active apps only
 defaults write com.apple.dock "static-only" -bool "true"
+
+# Disable “natural” (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
